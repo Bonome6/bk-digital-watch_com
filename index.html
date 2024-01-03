@@ -1,0 +1,52 @@
+<!-- Created by Bonome Katabana<3 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital watch</title>
+<link rel="stylesheet" href="bk.css">
+<script src="bk.js"type="text/JavaScript"></script>
+</head>
+<body>
+<div class="container">
+   <svg class="field" height="300" width="300">
+   <!-- display of clock -->
+     <circle cx="50%" cy="50%" r="110" fill="rgba(0,0,0,0.3)" stroke="#aa0">
+   </svg>
+   <div class="hours">
+      <i>12</i>
+      <i>.</i>
+      <i>.</i>
+      <i>3</i>
+      <i>.</i>
+      <i>.</i>
+      <i>6</i>
+      <i>.</i>
+      <i>.</i>
+      <i>9</i>
+      <i>.</i>
+      <i>.</i>
+   </div>
+   <div id="date"></div>
+   <div id="svgOutput">
+<svg class="arrows" width="300" height="300" viewBox="0 0 300 300">
+  <!-- center of rotation -->
+  <circle cx="50%" cy="50%" r="2" style="fill:#ccc;"/>
+  <!-- rotated arrows -->
+  <g id="sec" style="stroke:#ccc;" transform="rotate(-90,150,150)">
+    <line x1="50%" y1="50%" x2="80%" y2="50%"/>
+  </g>
+  <g id="min" stroke-width="2" style="stroke:#ccc;" transform="rotate(-90,150,150)">
+    <line x1="50%" y1="50%" x2="72.5%" y2="50%"/>
+  </g>
+  <g id="h" stroke-width="3" style="stroke:#ccc;" transform="rotate(-90,150,150)">
+    <line x1="50%" y1="50%" x2="65%" y2="50%"/>
+  </g>
+</svg>
+</div>
+</div>
+
+</body>
+</html>
